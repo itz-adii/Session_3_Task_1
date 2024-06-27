@@ -1,0 +1,135 @@
+@font-face {
+  font-family: myFont;
+  src: url(./Gilroy-Medium.ttf);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  height: 18vh;
+  width: 100%;
+  background-color: #242038;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100% - 18vh);
+  background-color: #d1d2f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .cgpa-content {
+  padding: 2vw;
+  width: 45%;
+  height: 85%;
+  background-color: #a3bcf9;
+  border-radius: 20px;
+}
+.brTag {
+  display: none;
+}
+#credits-input,
+#submit-btn,
+.inputs,
+.btn {
+  padding: 0.7vw;
+  border-radius: 0.8vw;
+  outline: none;
+  border: 1px solid gray;
+}
+
+#submit-btn,
+.btn {
+  cursor: pointer;
+  background-color: #7796cb;
+  border: none;
+}
+
+.totalCourses {
+  margin: 0.5vw;
+}
+
+.cgpa-content .labels,
+.inputs {
+  margin: 0.7vw;
+}
+
+.inputs {
+  width: 12vw;
+}
+
+h1 {
+  font-size: 2vmax;
+}
+
+h2 {
+  font-size: 1.6vmax;
+}
+
+h3 {
+  font-size: 1.2vmax;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.3vmax;
+  }
+
+  h2 {
+    font-size: 2vmax;
+  }
+
+  h3 {
+    font-size: 1.7vmax;
+  }
+
+  .heading {
+    height: 15vh;
+  }
+
+  main {
+    width: 100%;
+    min-height: calc(100% - 15vh);
+  }
+
+  main .cgpa-content {
+    padding: 5vw;
+    width: 85%;
+    height: 85%;
+  }
+
+  .brTag {
+    display: block;
+  }
+
+  #credits-input,
+  #submit-btn,
+  .inputs,
+  .btn {
+    padding: 1.7vw;
+    border-radius: 0.8vw;
+    outline: none;
+    border-radius: 7px;
+  }
+  .inputs {
+    width: 60vw;
+  }
+}
