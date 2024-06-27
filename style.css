@@ -59,8 +59,16 @@ main .cgpa-content {
 #submit-btn,
 .btn {
   cursor: pointer;
-  background-color: #7796cb;
+  background-color: #809ac8;
   border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover,
+#submit-btn:hover {
+  background-color: #6087c9;
+  color: white;
 }
 
 .totalCourses {
